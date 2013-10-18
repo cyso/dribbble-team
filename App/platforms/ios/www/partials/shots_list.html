@@ -1,0 +1,36 @@
+<div>
+	<ul class="thumbnails">
+		<li class="span3 shot" ng-repeat="shot in list.shots">
+			<div class="thumbnail">
+				<a href="#/shots/{{shot.id}}">
+					<img ng-src="{{ shot.image_url }}" />
+				</a>
+				<strong class="title"><small>{{shot.title}}</strong>
+				<a href="#/players/{{shot.player.username}}" class="player"><small>{{shot.player.name}}</small></a>
+				<div class="stats">
+					<span class="stat">
+						<i class="icon-eye-open"></i>
+						{{shot.views_count}}
+					</span>
+					<span class="stat">
+						<i class="icon-comment"></i>
+						{{shot.comments_count}}
+					</span>
+					<span class="stat">
+						<i class="icon-heart"></i>
+						{{shot.likes_count}}
+					</span>
+					<span class="stat">
+						<i class="icon-share-alt"></i>
+						{{shot.rebound_count}}
+					</span>
+				</div>				
+			</div>						
+		</li>
+	</ul>
+		<button
+			class="btn btn-primary"
+			ng-click="loadNextPage()">
+			Load Next Page
+		</button>
+</div>
