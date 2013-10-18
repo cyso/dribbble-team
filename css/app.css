@@ -1,0 +1,6 @@
+.title { overflow:hidden; white-space: nowrap;text-overflow: ellipsis;display: block;width:100%;color:black}
+.thumbnail { background-color: #f3f3f3;padding:3px;text-align: center;}
+.stat { margin-left:5%;margin-right:5%;color:#999 !important;}
+.higher { padding-bottom:-20px;}
+.media-object img {height:110px;width:110px}
+.comment img {height:60px;width:60px}
